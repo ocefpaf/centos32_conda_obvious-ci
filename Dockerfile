@@ -2,7 +2,8 @@ FROM pelson/conda32_obvious_ci
 
 MAINTAINER Filipe Fernandes <ocefpaf@gmail.com>
 
-RUN yum -y update
+# This is returning non-zero exit :-(
+# RUN yum -y update
 
 # conda patch and etc.
 RUN yum install -y patch file
