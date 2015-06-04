@@ -6,10 +6,15 @@ MAINTAINER Filipe Fernandes <ocefpaf@gmail.com>
 # RUN yum -y update
 
 # conda patch and etc.
-RUN yum install -y patch.i686 file.i686
+RUN yum install -y patch.i686
+RUN yum install -y file.i686
 
 # Qt, matplotlib deps, vispy
-RUN yum install -y libXext.i686 libSM.i686 libXrender.i686 fontconfig.i686 mesa-libGL.i686
+RUN yum install -y libXext.i686
+RUN yum install -y libSM.i686
+RUN yum install -y libXrender.i686
+RUN yum install -y mesa-libGL.i686
+RUN yum install -y fontconfig.i686
 
 # octant.
 RUN yum install -y gcc-gfortran.i686
@@ -24,7 +29,11 @@ RUN yum install -y compat-expat1.i686
 RUN yum install -y openjpeg-devel.i686
 
 # nco.
-RUN yum install -y bison.i686 byacc.i686 flex.i686 gsl-devel.i686 antlr.i686
+RUN yum install -y bison.i686
+RUN yum install -y byacc.i686
+RUN yum install -y flex.i686
+RUN yum install -y gsl-devel.i686
+RUN yum install -y antlr.i686
 
 # Update miniconda.
 RUN conda update --yes --all
