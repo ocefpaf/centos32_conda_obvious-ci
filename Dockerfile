@@ -17,7 +17,7 @@ RUN yum install -y libXrender.i686
 RUN yum install -y fontconfig.i686
 
 # octant.
-RUN yum install -y gcc-gfortran.i686
+# RUN yum install -y gcc-gfortran.i686
 
 # Udunits2
 RUN yum install -y expat-devel.i686
