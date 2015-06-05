@@ -13,7 +13,7 @@ RUN yum install -y patch.i686
 RUN yum install -y libXext.i686
 RUN yum install -y libSM.i686
 RUN yum install -y libXrender.i686
-RUN yum install -y mesa-libGL.i686
+# RUN yum install -y mesa-libGL.i686
 RUN yum install -y fontconfig.i686
 
 # octant.
