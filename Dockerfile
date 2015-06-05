@@ -29,7 +29,7 @@ RUN yum install -y compat-expat1.i686
 RUN yum install -y openjpeg-devel.i686
 
 # nco.
-RUN yum install -y bison.i686
+# RUN yum install -y bison.i686
 RUN yum install -y byacc.i686
 RUN yum install -y flex.i686
 RUN yum install -y gsl-devel.i686
