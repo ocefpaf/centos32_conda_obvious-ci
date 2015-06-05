@@ -7,7 +7,7 @@ MAINTAINER Filipe Fernandes <ocefpaf@gmail.com>
 
 # conda patch and etc.
 RUN yum install -y patch.i686
-RUN yum install -y file.i686
+# RUN yum install -y file.i686
 
 # Qt, matplotlib deps, vispy
 RUN yum install -y libXext.i686
