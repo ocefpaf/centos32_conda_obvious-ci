@@ -33,7 +33,7 @@ RUN yum install -y openjpeg-devel.i686
 # RUN yum install -y byacc.i686
 # RUN yum install -y flex.i686
 RUN yum install -y gsl-devel.i686
-# RUN yum install -y antlr.i686
+RUN yum install -y antlr.i686
 
 # Update miniconda.
 RUN conda update --yes --all
